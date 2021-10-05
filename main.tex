@@ -7,7 +7,7 @@
 \usepackage{lastpage}
 \usepackage{vhistory}
 \usepackage{hyperref}
-\usepackage{draftwatermark}
+% \usepackage{draftwatermark}
 \usepackage{float}
 \usepackage{array}
 \usepackage{changebar}
@@ -91,6 +91,10 @@
         TP 6010 is a publication by Transport Canada that gives you information on airspace classification and structure. The top part shows the rules for each classes and the bottom part displays visually how the different classes of airspace are arranged.
         
         You can google TP 6010 and print it as a reference.
+        
+        \subsection{Flight Test Guide}
+        The flight test guide sets out the techniques, procedures and the marking criteria that will be used by Civil Aviation Inspectors and delegated Pilot Examiners for the conduct of the flight test required to demonstrate the skill requirements for the issuance of the Private Pilot Licence - Aeroplane. It is basically your contract with Transport Canada on how the exam will be conducted and what you will be marked on. You want to get familiar with this early in training. It is accessible \href{https://tc.canada.ca/en/aviation/publications/flight-test-guide-private-pilot-licence-aeroplane-tp-13723}{\color{cyan}here}.
+        
     
     \section{Maps and airspace}
         \subsection{Airspace}
@@ -207,22 +211,50 @@
     \section{Documents}
     \begin{samepage}
     
-    Certain documents need to be carried on board during a flight and others need to be checked before the flight to ensure the required maintenance has been done on the aircraft. We use the AROWJIP acronym to help remember them.
+    Certain documents need to be carried on board during a flight and others need to be checked before the flight to ensure the required maintenance has been done on the aircraft. We use the JAILROW acronym to help remember them.
     
     \begin{itemize}
-        \item \textbf{A --} Certificate of Airworthiness (C of A)
-        \item \textbf{R --}  Certificate of Registration 
-        \item \textbf{O --}  Operating Handbook:  Pilot Operating Handbook (POH)
-        \item \textbf{W --}  Weight and Balance
-        \item \textbf{J --}   Journey Log
-        \item \textbf{I --}  Insurance
-        \item \textbf{P --}  Personal Licences
-        \item \textbf{[I --}   Intercept orders]*
+        \item \parbox[t]{0.4cm}{\textbf{J}} -- Journey Log
+        \item \parbox[t]{0.4cm}{\textbf{A}} -- Certificate of Airworthiness (C of A)
+        \item \parbox[t]{0.4cm}{\textbf{I}} -- Insurance
+        \item \parbox[t]{0.4cm}{\textbf{L}} -- Licences and medical
+        \item \parbox[t]{0.4cm}{\textbf{R}} -- Certificate of Registration 
+        \item \parbox[t]{0.4cm}{\textbf{O}} -- Operating Handbook:  Pilot Operating Handbook (POH)
+        \item \parbox[t]{0.4cm}{\textbf{W}} -- Weight and Balance
     \end{itemize}
-    
-    * What to do if intercepted in the air by military or other official aircraft. A copy should be on board, though it is not a legal requirement. It can be found in the last pages of the CFS.
     \end{samepage}
 
+    \subsection{Journey Log [605.94] and [605.95]}
+    
+    The journey log must be carried on board unless the operator has a letter from the ministry that allows keeping it on the ground (e.g flight schools).
+    
+    As per [605.95], the journey log need not be carried on board for a flight if it is not planned to land and shut down the engine at another airport.
+    
+    Each flight and change of PIC must be entered on a separate line, unless:
+    \begin{itemize}
+        \item They are made by the same pilot, within 8 hours and within 25 NM of the departure point (e.g: glider towing, parachute drops)
+        \item For a flying school, all flights are recorded and preserved on a daily flying sheet.
+    \end{itemize}
+    
+    Defects must be entered in the Comments or Defects column unless the company maintenance manual provides for separate snag sheets.
+    
+    Entries must be in ink, and incorrect entry must be crossed out by a single line and initialed.
+    
+    Erasing, altering, or removing part of a logbook is a punishable offence.
+    
+    Journey logs must be kept for 1 years after the last entry date. [605.94]
+    
+    The last two entries of the old journey log are entered as the first two entries of the new log book.
+    
+    To verify that a journey log is up-to-date, and the aircraft is airworthy, check:
+    \begin{itemize}
+        \item Recent flights have been entered
+        \item All airworthiness inspections have been completed and signed off by an AME
+        \item Enough hours remain on the aircraft to complete the intended flight prior to the next inspection
+        \item Snags or defects have been addressed and signed off by an AME
+        \item Periodic inspections have been completed -- see subsection \ref{subsection:periodic}.
+    \end{itemize}
+    
     \subsection{Certificate of Airworthiness}
 
     The C of A is issued by Transport Canada to certify that the original design was airworthy.  Conventional aircraft (Cessna, Piper, etc) have a standard certificate of airworthiness. It is based on the original design, testing and manufacture approved by the FAA or TC. A special certificate of airworthiness can be issued for amateur-built aircraft, based on inspection by TC or a designated inspector during construction.  
@@ -267,6 +299,8 @@
     When operating on a flight permit ensure all restrictions listed on the permit are checked prior to flying the aircraft.
 
     \subsubsection{Periodic Inspections}
+    \label{subsection:periodic}
+    
     Some required inspections are based on air time, others are on a fixed calendar schedule.
     
     An annual inspection is required for all aircraft that are not on Progressive Care, in particular private aircraft. The annual inspection can take multiple days to do, so commercial organizations use Progressive Care which breaks the inspection down into modules which are done at 50 hour intervals. Rockcliffe has its own program approved by Transport Canada.
@@ -284,8 +318,25 @@
     All aircraft must have a first aid kit and portable fire extinguisher on board as per [602.59]. These are considered safety items. [602.59] and [625 Appendix C] mention that fire extinguishers should be inspected regularly as per Canadian Standards Association or manufacturer's recommendation. The standard is to inspect portable fire extinguishers annually.
     
     Air operators are required to have specific contents in their first aid kit and it shall be inspected annually as per [705.90]. It is a strong recommendation for everyone else, such as an FTU, but not a requirement. It can be argued that the first aid kit, being a safety item, is covered under the general rule for safety items and as such it shall be inspected annually.
+
+    \subsection{Insurance}
     
-\subsection{Certificate of registration [202.26]}
+    All aircraft must carry Liability Insurance, the amount of which is determined by the number of passengers the aircraft is capable of carrying and the weight of the aircraft [606.02]. If the aircraft is not engaged in a commercial operation, a minimum of \$100,000 liability insurance is required for an aircraft with maximum takeoff weight of 2300 lbs, \$500,000 for an aircraft between 2300 and 5000 lbs. Regulations require a minimum liability insurance of \$300,000 times the number of passengers on board for an aircraft in commercial operation of weight less than 5000 lbs, excluding parachute drops.
+    
+    Private and Commercial registered aircraft must carry proof of insurance on board.
+    
+    Failure to fly the aircraft in accordance with the certificate of airworthiness and for commercial purpose when the aircraft is registered for private purpose may invalidate any insurance coverage.
+        
+    \subsection{Licences and medical}
+    
+    They must be valid, signed, appropriate for the weather and time of day and carried on board as per [401.03].
+    \begin{itemize}
+        \item student pilot or pilot’s licence
+        \item medical certificate
+        \item restricted radio certificate -- technically, it doesn't have to be on board. According to s38 of Part V of the Radiocommunication Regulations (SOR 96-484), the pilot must be able to produce the document within 48 hours of receiving a request by an inspector.
+    \end{itemize}
+
+    \subsection{Certificate of registration [202.26]}
 
     It is the official registration of the airplane with the Government of Canada. It lists the aircraft call sign, serial number, year of manufacture, owner’s name and address, and purpose (commercial, private).
 
@@ -310,9 +361,9 @@
 
     \subsection{Operating manual (Pilot Operating Handbook)}
     
-    The POH must be carried on board; it must be for the exact model and year of manufacture. It lists operating limitations, performance, emergency and standard procedures and servicing specifications. The aircraft must be operated in accordance with the POH to keep the Certificate of Airworthiness valid. 
+    The POH must be carried on board [605.04]; it must be for the exact model and year of manufacture. It lists operating limitations, performance, emergency and standard procedures and servicing specifications. The aircraft must be operated in accordance with the POH to keep the Certificate of Airworthiness valid. 
     
-    \subsection{Weight and Balance}
+    \subsection{Weight and Balance [605.92]}
     
     The \emph{Weight and Balance Report} lists all the components of the aircraft, their weights, and positions and the overall empty weight, empty center of gravity, empty moment and disposable load. Be careful, aircraft built after 1975 use a standard basic empty weight which includes all fluids and unusable fuel. Older aircraft used empty weight or licenced empty weight which does not always include oil or unusable fuel. Refer to the specific POH weight and balance section for details.
     
@@ -323,38 +374,7 @@
     The aircraft must be weighted and the W\&B is recalculated when an AME or AMO judges that there have been too many small changes done by arithmetic only for the weight and balance report to be accurate.
     
     The latest amendment information must be used for the calculation of weight and balance prior to a flight, NOT what is in the examples provided in the POH.
-    
-    \subsection{Journey Log [605.94] and [605.95]}
-    
-    The journey log must be carried on board unless the operator has a letter from the ministry that allows keeping it on the ground (e.g flight schools).
-    
-    As per [605.95], the journey log need not be carried on board for a flight if it is not planned to land and shut down the engine at another airport.
-    
-    Each flight and change of PIC must be entered on a separate line, unless:
-    \begin{itemize}
-        \item They are made by the same pilot, within 8 hours and within 25 NM of the departure point (e.g: glider towing, parachute drops)
-        \item For a flying school, all flights are recorded and preserved on a daily flying sheet.
-    \end{itemize}
-    
-    Defects must be entered in the Comments or Defects column unless the company maintenance manual provides for separate snag sheets.
-    
-    Entries must be in ink, and incorrect entry must be crossed out by a single line and initialed.
-    
-    Erasing, altering, or removing part of a logbook is a punishable offence.
-    
-    Journey logs must be kept for 1 years after the last entry date. [605.94]
-    
-    The last two entries of the old journey log are entered as the first two entries of the new log book.
-    
-    To verify that a journey log is up-to-date, and the aircraft is airworthy, check:
-    \begin{itemize}
-        \item Recent flights have been entered
-        \item All airworthiness inspections have been completed and signed off by an AME
-        \item Enough hours remain on the aircraft to complete the intended flight prior to the next inspection
-        \item Snags or defects have been addressed and signed off by an AME
-        \item Periodic inspections have been completed
-    \end{itemize}
-    
+
     \subsection{Technical Logs}
     
     Technical logs are issued for each aircraft and record any inspections and/or maintenance to various parts of the aircraft. The Technical logs comprise:
@@ -366,23 +386,6 @@
     \end{itemize}
     
     Technical logs are not normally to be carried on board, stored or travel with the Journey Log.  This is to ensure that at least one copy of the maintenance record exists should the airplane be destroyed en-route. They are subject to the same rules as the Journey Log: timeliness, correction and accuracy.
-    
-    \subsection{Insurance}
-    
-    All aircraft must carry Liability Insurance, the amount of which is determined by the number of passengers the aircraft is capable of carrying and the weight of the aircraft [606.02]. If the aircraft is not engaged in a commercial operation, a minimum of \$100,000 liability insurance is required for an aircraft with maximum takeoff weight of 2300 lbs, \$500,000 for an aircraft between 2300 and 5000 lbs. Regulations require a minimum liability insurance of \$300,000 times the number of passengers on board for an aircraft in commercial operation of weight less than 5000 lbs, excluding parachute drops.
-    
-    Private and Commercial registered aircraft must carry proof of insurance on board.
-    
-    Failure to fly the aircraft in accordance with the certificate of airworthiness and for commercial purpose when the aircraft is registered for private purpose may invalidate any insurance coverage.
-    
-    \subsection{Personal Licences of the crew}
-    
-    They must be valid, signed, appropriate for the weather and time of day and carried on board.
-    \begin{itemize}
-        \item student pilot or pilot’s licence
-        \item medical certificate
-        \item restricted radio certificate
-    \end{itemize}
 
     \subsection{Not to be carried on board}
     
@@ -395,9 +398,10 @@
     \section{Radio calls}
     During your training flights you will have to communicate your position and intentions to other aircraft or air traffic controllers. Refer to the VFR Phraseology guide by Nav Canada to learn the basics such as the radio alphabet, how to pronounce numbers, etc. It is a very good guide to understand the radio communications between aircraft and ATC. It can be found \href{https://www.navcanada.ca/en/vfr-phraseology.pdf}{\color{cyan}here}.
     
-    At Rockcliffe, a lot of our time is spent at the airport and in the practice area, where we simply broadcast our intentions on the radio. Every radio call is made in the same order: Who you’re talking to, who you are, where you are and what you want. Table \ref{tab:radiocalls} shows examples of the calls you’ll be making in a training flight.
-    
+    At Rockcliffe, a lot of our time is spent at the airport and in the practice area, where we simply broadcast our intentions to others on the radio. Every radio call is made in the same order: Who you’re talking to, who you are, where you are and what you want. Table \ref{tab:radiocalls} shows examples of the calls you’ll be making in a training flight.
+
     \begin{table}[]
+    \hspace*{-1cm}
         \begin{tabular}{| p{0.30\linewidth} |  p{0.20\linewidth} | p{0.07\linewidth} |  p{0.40\linewidth} |}
         \hline
          When & Who you're talking to & Id & Position/Intentions\\
@@ -440,22 +444,43 @@
         \hline
         
         \end{tabular}
+        \hspace*{-1cm}
         \caption{Common radio calls}
         \label{tab:radiocalls}
     \end{table}
     
-    \cbstart
     \subsection{Common wording}
-    Here is a list of common phrases you'll hear on the radio and what they mean:
+    Here are common phrases you'll hear on the radio and what they mean:
     \begin{itemize}
         \item Lining up runway 27 (or taking position): You're going to taxi on the runway and 'line up' with the centerline and wait. Usually done when you will wait for another aircraft to taxi off the runway for example.
         \item Immediate take-off (or departure) runway 27: You will taxi onto the runway and takeoff without stopping or waiting. 
         \item The overhead procedure: The procedure depicted in subsection \ref{subsection:localprocs} where you fly over the circuit at 1700' to turn around and join the circuit at 1200'.
+        \item Established Cantley to Wilson's Corner: We commonly pick 2 landmarks around which we're working. To keep everyone safely separated, we communicate to others where we are working.
     \end{itemize}
-    \cbend
+
+    \newpage
+    \section{How to get to first solo}
     
+    There are a few exams to pass and things to do in order to get to your first solo. You want to start to work on them early in your training so they don't become a roadblock closer to your solo. Here are the major ones.
+    
+    \subsection{Medical Certificate}
+    You need to have a valid medical certificate to fly. If you haven't already, ask dispatch for a current list of CAME's (Civil Aviation Medical Examiner) and go get your medical done.
+        
+    \subsection{PSTAR}
+    It used to be the \textbf{P}re-\textbf{S}olo \textbf{T}est of \textbf{A}ir \textbf{R}egulations. It was too easy so they renamed it to the Student Pilot Permit or Private Pilot Licence for Foreign and Military Applicants, Aviation Regulations. It is a closed book exam of 50 questions from a public question bank you have access to. You can google for a website called Robyn's PSTAR or search your phone's app store for PSTAR app to study. The website has a commentary section on the right that explains why each answer is right or wrong. The exam is done at the club and booked through dispatch.
+        
+    \subsection{Radio License}
+    You need a license to legally talk on the radio while flying. It's called the ROC-A for Radio Operator Certificate -- Aeronautical. Reading the previous material for the PSTAR and the VFR Phraseology guide should be enough to pass this exam. The exam is done at the club and booked through dispatch.
+
+    \subsection{Student Pilot Permit}
+    Known as the SPP, this is the Transport Canada permit that lets you fly solo under instructor supervision. After you have passed the PSTAR and ROC-A, you can submit your application through one of our Authorized Person. They will need to see and take a copy of a proof of name, age and citizenship (e.g. passport).
+    
+    \subsection{In-flight exercises}
+    Specific exercises need to be completed and signed out in your PTR as completed before you go solo. You'll see the list at the front of your PTR but they include things you will learn soon like stalls, spins and crosswind landings.
+
 \newpage
 \begin{versionhistory}
+  \vhEntry{1.1}{2021--10--05}{GL}{Added Flight Test Guide, radio calls, JAILROW and pre-solo information}
   \vhEntry{1.0}{2021--09--22}{GL}{Created}
 \end{versionhistory}
 
