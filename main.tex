@@ -1,4 +1,13 @@
+%
+% The RFC Brand New Student Handout.
+%
+% Don't worry it's super simple. :)
+
+% article is the class of document. It just sets nice defaults as far as the look goes.
+% we're also defaulting to 12 point and letter paper 
 \documentclass[12pt,letterpaper]{article}
+
+% These are just addons we're loading to use some additional feature
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{geometry}
@@ -11,49 +20,63 @@
 \usepackage{float}
 \usepackage{array}
 \usepackage{changebar}
+
+% variables you can change to personalize this document
+\newcommand{\instructorName}{Guillaume Larose}
+\newcommand{\cellPhone}{819--328--0825}
+\newcommand{\email}{glarose@rfc.ca}
+\newcommand{\instructorClass}{1}
+
+% fancy style adds more defaults like 3 part footers
 \pagestyle{fancy}
 \fancyhead{}
 
-\lfoot{Beginning your flight training}
+\lfoot{Beginning your flight training} % left footer text
 \cfoot{}
-\rfoot{\thepage}
-\renewcommand{\footrulewidth}{1pt}
+\rfoot{\thepage} % page number in right footer
+\renewcommand{\footrulewidth}{2pt} % thickness of footer line
 
-\oddsidemargin=-10pt % Left margin; widened here with a negative value
+\oddsidemargin=-20pt % Left margin; widened here with a negative value
 \textwidth=7in % Text width
-\setlength{\parindent}{0ex}
+\setlength{\parindent}{0ex} % no paragraph indentation on first line
+\addtolength{\textheight}{50pt}
 
+% This is where the actual document starts
 \begin{document}
 
 \begin{center}
 
+% The RFC logo and photo header with white text layered on top
+
 \begin{picture}(1000,1)
     \put(0,-50){\includegraphics[width=\textwidth]{cyro-header.png}}
     \textcolor{white}{
-    \put(190,16){\textbf{\small Guillaume Larose}}
+    \put(190,16){\textbf{\small \instructorName}}
     \put(190,4){}
-    \put(190,-8){\small Flight Instructor}
+    \put(190,-8){\small Class \instructorClass{}  Flight Instructor}
     \put(190,-20){\small Rockcliffe Flying Club}
     \put(320,16){\small 1495 Sir George-Étienne Cartier Pkwy}
     \put(320,4){\small 613--746--4425 phone}
-    \put(320,-8){\small 819--328--0825 cell}
-    \put(320,-20){\small guillaume@rfc.ca}
+    \put(320,-8){\small \cellPhone{} cell}
+    \put(320,-20){\small \email{}}
     \put(320,-32){\small https://cyro.ca}}
 \end{picture}
 
 \end{center}
 \vspace{16mm}
 
-\centerline{ \large Beginning your flight training}
+\centerline{ \LARGE Beginning your flight training}
 
+% Generates a full table of contents
 \tableofcontents
-\setlength{\parskip}{1em}
-    \section{Introduction}
-    Beginning flight training may seem like drinking from a fire hose at first. This is a collection of resources and information that will be useful to understand more about your flight training. As you progress through the training, these subjects will be covered in more details but having a basic understanding will help make more sense of your training.
+\pagebreak
 
-    \section{Resources}
+\section{Introduction}
+	Beginning flight training may seem like drinking from a fire hose at first. This is a collection of resources and information that will be useful to understand more about your flight training. As you progress through the training, these subjects will be covered in more details but having a basic understanding will help make more sense of your training.
+
+\section{Resources}
     
-        These are the official sources of information for aviation that you need to reference and get familiar with during your training. When available, this document will link to their online version.
+These are the official sources of information for aviation that you need to reference and get familiar with during your training. When available, this document will link to their online version.
     
         \subsection{AIM}
         The Transport Canada Aeronautical Information Manual (TC AIM) provides flight crews with a single source for information on rules and procedures for aircraft operation in Canadian airspace.
@@ -96,7 +119,7 @@
         The flight test guide sets out the techniques, procedures and the marking criteria that will be used by Civil Aviation Inspectors and delegated Pilot Examiners for the conduct of the flight test required to demonstrate the skill requirements for the issuance of the Private Pilot Licence - Aeroplane. It is basically your contract with Transport Canada on how the exam will be conducted and what you will be marked on. You want to get familiar with this early in training. It is accessible \href{https://tc.canada.ca/en/aviation/publications/flight-test-guide-private-pilot-licence-aeroplane-tp-13723}{\color{cyan}here}.
         
     
-    \section{Maps and airspace}
+\section{Maps and airspace}
         \subsection{Airspace}
         All airspace in Canada is divided in different classes named A through G. Refer to TP 6010 to see the rules that apply to us in the VFR section. 
         
@@ -171,7 +194,7 @@
         This also means departing traffic should not climb above 1200' until west of the Gatineau river to stay out of the way of the incoming traffic. There is also traffic coming in from the west that will overfly all the previous traffic at 2200' until they talk to each other to sort out any conflicts. Figure \ref{fig:local-procedures} depicts these procedures.
         
         
-    \section{Transponder, radar and ATC}
+ \section{Transponder, radar and ATC}
         \subsection{Primary and Secondary Radar}
         Air traffic controllers rely on radar to see the position of aircrafts, their identity, speed and altitude.
         
@@ -208,7 +231,8 @@
         On the ground, you can reach Quebec FIC by calling 1-866-WX-BRIEF. WX stands for weather. You can reach Montreal Center by calling 1-866-VFR-CODE.
 
     \clearpage
-    \section{Documents}
+
+ \section{Documents}
     \begin{samepage}
     
     Certain documents need to be carried on board during a flight and others need to be checked before the flight to ensure the required maintenance has been done on the aircraft. We use the JAILROW acronym to help remember them.
@@ -395,22 +419,23 @@
     
     Airframe logs, engine Logs, propeller logs and installation and modification logs should not be carried on board.
     
-    \section{Radio calls}
+ \section{Radio calls}
     During your training flights you will have to communicate your position and intentions to other aircraft or air traffic controllers. Refer to the VFR Phraseology guide by Nav Canada to learn the basics such as the radio alphabet, how to pronounce numbers, etc. It is a very good guide to understand the radio communications between aircraft and ATC. It can be found \href{https://www.navcanada.ca/en/vfr-phraseology.pdf}{\color{cyan}here}.
     
     At Rockcliffe, a lot of our time is spent at the airport and in the practice area, where we simply broadcast our intentions to others on the radio. Every radio call is made in the same order: Who you’re talking to, who you are, where you are and what you want. Table \ref{tab:radiocalls} shows examples of the calls you’ll be making in a training flight.
 
     \begin{table}[]
     \hspace*{-1cm}
-        \begin{tabular}{| p{0.30\linewidth} |  p{0.20\linewidth} | p{0.07\linewidth} |  p{0.40\linewidth} |}
+        \renewcommand{\arraystretch}{2.0} % Default value: 1 Adds vertical spacing in table cells 
+        \begin{tabular}{| p{0.30\linewidth} |  p{0.20\linewidth} | p{0.07\linewidth} |  p{0.40\linewidth} |} % the width of each column
         \hline
-         When & Who you're talking to & Id & Position/Intentions\\
+         When & Who you're talking to & Id & Position/Intentions  \\
         \hline
      
-        Radio check after start & Rockcliffe dispatch & GQUO & Radio check seat 1\\
+        Radio check after start & Rockcliffe dispatch & GQUO & Radio check seat 1 \\
         \hline
         
-        On taxiway A waiting for traffic to land & Rockcliffe traffic & GQUO & Holding short runway 27\\
+        On taxiway A waiting for traffic to land & Rockcliffe traffic & GQUO & Holding short runway 27  \\
         \hline
         
         Prior to entering the runway & Rockcliffe traffic & GQUO & Immediate takeoff rwy 27\\
@@ -458,8 +483,8 @@
         \item Established Cantley to Wilson's Corner: We commonly pick 2 landmarks around which we're working. To keep everyone safely separated, we communicate to others where we are working.
     \end{itemize}
 
-    \newpage
-    \section{How to get to first solo}
+ \newpage
+ \section{How to get to first solo}
     
     There are a few exams to pass and things to do in order to get to your first solo. You want to start to work on them early in your training so they don't become a roadblock closer to your solo. Here are the major ones.
     
@@ -480,6 +505,7 @@
 
 \newpage
 \begin{versionhistory}
+  \vhEntry{1.2}{2024--08--15}{GL}{Cleaned-up presentation, vertical space in radio calls. added variables and comments for personalization}
   \vhEntry{1.1}{2021--10--05}{GL}{Added Flight Test Guide, radio calls, JAILROW and pre-solo information}
   \vhEntry{1.0}{2021--09--22}{GL}{Created}
 \end{versionhistory}
